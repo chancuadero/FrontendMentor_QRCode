@@ -2,7 +2,7 @@
 const qrCode = new QRCodeStyling({
     width: 200,
     height: 200,
-    data: "https://www.frontendmentor.io/home",
+    data: "https://www.frontendmentor.io/",
         
     dotsOptions: {
     color: "#FFFFFF",
