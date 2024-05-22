@@ -1,16 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const qrCode = new QRCodeStyling({
+    const qrCodeElement = document.getElementById("qrcode");
+    const qrcode = new QRCode(qrCodeElement, {
+        text: "https://www.frontendmentor.io/",
         width: 200,
         height: 200,
-        data: "https://www.frontendmentor.io/",
-        dotsOptions: {
-            color: "#FFFFFF",
-            type: "square"
-        },
-        backgroundOptions: {
-            color: "#2C7DFA"
-        }
+        colorDark: "#FFFFFF",
+        colorLight: "#2C7DFA",
+        correctLevel: QRCode.CorrectLevel.H
     });
 
-    qrCode.append(document.getElementById("qrcode"));
+   
+
 });
